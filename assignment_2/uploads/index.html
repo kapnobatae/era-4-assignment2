@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Animals • Dark • Split</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container split">
+    <!-- LEFT: radios centered -->
+    <section class="left">
+      <h1>Choose Source</h1>
+      <div class="box radios" role="radiogroup" aria-label="Choose an option">
+        <label class="radio">
+          <input type="radio" name="source" id="cat" value="cat" />
+          <span>Cat</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="source" id="dog" value="dog" />
+          <span>Dog</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="source" id="elephant" value="elephant" />
+          <span>Elephant</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="source" id="upload" value="upload" />
+          <span>Upload file</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- RIGHT: preview or upload area -->
+    <section class="right">
+      <!-- Preview image -->
+      <img id="animalImg" width="360" class="img" alt="Preview" hidden />
+
+      <!-- Upload UI -->
+      <section id="uploadSection" class="upload" hidden>
+        <h2>Upload a File</h2>
+        <div class="box">
+          <input type="file" id="fileInput" />
+          <button id="uploadBtn" type="button">Submit</button>
+        </div>
+        <pre id="fileInfo" class="pre"></pre>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Bookmark Search",
+  "version": "1.0",
+  "description": "Quickly search and filter Chrome bookmarks by keyword, tag, or domain.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["bookmarks"]
+}
+
